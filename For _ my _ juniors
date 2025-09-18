@@ -1,0 +1,330 @@
+                                                     # LIST#
+                                       ### THIS IS FOR MY JUNIORS ###
+                       #### THIS IS USEFUL FOR YOUR FUTURE LIFE AND ACHIVE YOURSELF ####
+INTRODUCTION :
+     ✅ Definition of List in Python :
+             * A list in Python is a built-in data type that is used to store a collection of items.
+             * It is ordered (elements maintain their sequence).
+             * It is mutable (you can change, add, or remove elements after creation).
+             * It allows duplicate values.
+             * It can store different data types (int, str, float, bool, even another list).
+
+✅ Types of List Methods:
+              1️⃣ Adding Elements :
+                         * append(x) → Add element at the end.
+                         * insert(i, x) → Insert element at specific index.
+                         * extend(iterable) → Add multiple elements from another list/iterable.
+              2️⃣ Removing Elements
+                         * remove(x) → Remove first occurrence of value.
+                         * pop([i]) → Remove element at given index (default last).
+                         * clear() → Remove all elements.
+              3️⃣ Searching / Counting
+                        * index(x) → Find index of first occurrence.
+                        * count(x) → Count how many times a value appears.
+              4️⃣ Sorting / Reversing
+                        * sort() → Sort list in ascending order.
+                        * sort(reverse=True) → Sort in descending order.
+                        * reverse() → Reverse the order of elements.
+              5️⃣ Copying / Utility
+                        * copy() → Return a shallow copy of the list.
+#   ADDING METHOD:
+
+1️⃣ append()
+    👉 Definition: Adds one item at the end of the list.
+EXAMPLE :
+   fruits = ["apple", "banana"]
+   fruits.append("mango")
+   print(fruits)    # ['apple', 'banana', 'mango']
+   
+2️⃣ insert()
+    👉 Definition: Adds an item at a specific position (index) in the list.
+EXAMPLE :
+   fruits = ["apple", "banana"]
+   fruits.insert(1, "mango")  
+   print(fruits)     # ['apple', 'mango', 'banana']
+   
+3️⃣ extend()
+    👉 Definition: Adds many items (from another list) to the end.
+EXAMPLE :
+   fruits = ["apple", "banana"]
+   fruits.extend(["mango", "grape"])
+   print(fruits)   # ['apple', 'banana', 'mango', 'grape']
+   
+# DELETING METHOD :
+
+1️⃣ remove()
+   👉 Definition: Removes the first matching item by value.
+EXAMPLE:
+   fruits = ["apple", "banana", "mango"]
+   fruits.remove("banana")
+   print(fruits)   # ['apple', 'mango']
+   
+2️⃣ pop()
+   👉 Definition: Removes an item by index (default: last item).
+EXAMPLE:
+   fruits = ["apple", "banana", "mango"]
+   fruits.pop(1)  
+   print(fruits)   # ['apple', 'mango']
+
+3️⃣ clear()
+    👉 Definition: Removes all items from the list (makes it empty).
+EXAMPLE:
+   fruits = ["apple", "banana", "mango"]
+   fruits.clear()
+   print(fruits)   # []
+   
+# SEARCHING /COUNTING METHOD:
+
+1️⃣ index()
+     👉 Definition: Finds the position (index) of the first matching item.
+EXAMPLE:
+    fruits = ["apple", "banana", "mango"]
+    print(fruits.index("banana"))   # 1
+
+2️⃣ count()
+    👉 Definition: Counts how many times an item appears.
+EXAMPLE:
+   fruits = ["apple", "banana", "apple", "mango"]
+   print(fruits.count("apple"))   # 2
+
+# SORTING/REVERSING METHOD :
+
+1️⃣ sort()
+     👉 Definition: Arranges items in ascending order.
+EXAMPLE:
+   numbers = [30, 10, 20]
+   numbers.sort()
+   print(numbers)   # [10, 20, 30]
+
+2️⃣ sort(reverse=True)
+     👉 Definition: Arranges items in descending order.
+EXAMPLE:
+   numbers = [30, 10, 20]
+   numbers.sort(reverse=True)
+   print(numbers)   # [30, 20, 10]
+
+3️⃣ reverse()
+    👉 Definition: Simply reverses the order of items.
+EXAMPLE:
+    numbers = [1, 2, 3]
+    numbers.reverse()
+    print(numbers)   # [3, 2, 1]
+
+# Copying METHOD :
+
+1️⃣ copy()
+    👉 Definition: Makes a new copy of the list.
+EXAMPLE:
+   fruits = ["apple", "banana"]
+   new_list = fruits.copy()
+   print(new_list)   # ['apple', 'banana']
+
+ ====================== EXPLANATION COMPLETED ============================
+
+# EXERCISE 1 :
+1. Declare an empty list
+2. Declare a list with more than 5 items
+3. Find the length of your list
+4. Get the first item, the middle item and the last item of the list
+5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
+6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
+7. Print the list using print()
+8. Print the number of companies in the list
+9. Print the first, middle and last company
+10. Print the list after modifying one of the companies
+11. Add an IT company to it_companies
+12. Insert an IT company in the middle of the companies list
+13. Change one of the it_companies names to uppercase (IBM excluded!)
+14. Join the it_companies with a string '#;&nbsp; '
+15. Check if a certain company exists in the it_companies list.
+16. Sort the list using sort() method
+17. Reverse the list in descending order using reverse() method
+18. Slice out the first 3 companies from the list
+19. Slice out the last 3 companies from the list
+20. Slice out the middle IT company or companies from the list
+21. Remove the first IT company from the list
+22. Remove the middle IT company or companies from the list
+23. Remove the last IT company from the list
+24. Remove all IT companies from the list
+25. Destroy the IT companies list
+26. Join the following lists:
+
+
+# IMPLEMENTATION OF EXERCISE 1 :
+
+# CREATE A LIST :
+lst=['1','2','3','4','5','dharun','royal']
+mixed_data_type=['dharun' ,'18' ,'155' ,'no' ,'rajapayalam']
+it_companies=['Facebook', 'Google', 'microsoft', 'Apple', 'IBM','Oracle','Amazon']
+
+# FIND THE LENGTH OF THE LIST :
+print(len(lst))
+
+# SLINCING OPERATOR :
+print(lst[0:7:3])
+print(mixed_data_type)
+print(it_companies)
+
+# CREATE A VARIABLE AND ASSIGN A VALUE TO THE VARIABLE :
+a=(len(it_companies))   # FIND LENGTH OF THE VARIABLE
+print("number of companies:",a)
+print(it_companies[:7:3])
+
+# REMOVING ELEMENT :
+
+it_companies.remove("IBM")
+it_companies[4]="Zoho"
+print(it_companies)
+
+# ADDING ELEMENT :
+
+it_companies.append('infosys')
+print(it_companies)
+it_companies.insert(3,"meta")
+print(it_companies)
+
+# CHANGE INTO UPPER CASE :
+
+it_companies[2]=it_companies[2].upper()
+print(it_companies)  
+
+# REPLACE :
+
+it_companies[0]=it_companies[0].replace(it_companies[0],"whatsapp")
+print(it_companies)
+d='#;& '.join(it_companies)
+print(d)
+print('meta' in it_companies)
+
+# SORTING METHOD  
+
+it_companies.sort()
+print(it_companies)
+it_companies.reverse()
+print(it_companies)
+print(it_companies[0:3])  # SORTING BY USING SLICING
+print(it_companies[-3:])         
+n=len(it_companies)      
+
+# FIND THE MIDDLE ELEMENT :
+
+mid1,mid2=n//2-1,n//2
+print(it_companies[mid1:mid2])
+it_companies.remove("whatsapp")
+print(it_companies)
+n=len(it_companies)
+start=(n-1)//2
+end=n//2+1  
+
+## DELETING METHOD
+
+del it_companies[start:end]
+print(it_companies)
+it_companies.pop()     # DELETE THE LAST ELEMENT 
+print(it_companies)
+it_companies.clear()   # CLEAR THE ENTIRE LIST
+print(it_companies)
+del it_companies
+# SAMPLE EXAMPLE :
+front_end=['HTML','CSS','JS','REACT','REDUX']
+back_end=['NODE','EXPRESS','MANGODB']
+full_stack=front_end+back_end
+print(full_stack)
+full_stack.append('PYTHON')
+full_stack.append('SQL')
+print(full_stack)
+
+# OUTPUT : 
+
+7
+['1', '4', 'royal']
+['dharun', '18', '155', 'no', 'rajapayalam']
+['Facebook', 'Google', 'microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+number of companies: 7
+['Facebook', 'Apple', 'Amazon']
+['Facebook', 'Google', 'microsoft', 'Apple', 'Zoho', 'Amazon']
+['Facebook', 'Google', 'microsoft', 'Apple', 'Zoho', 'Amazon', 'infosys']
+['Facebook', 'Google', 'microsoft', 'meta', 'Apple', 'Zoho', 'Amazon', 'infosys']
+['Facebook', 'Google', 'MICROSOFT', 'meta', 'Apple', 'Zoho', 'Amazon', 'infosys']
+['whatsapp', 'Google', 'MICROSOFT', 'meta', 'Apple', 'Zoho', 'Amazon', 'infosys']
+whatsapp#;& Google#;& MICROSOFT#;& meta#;& Apple#;& Zoho#;& Amazon#;& infosys
+True
+['Amazon', 'Apple', 'Google', 'MICROSOFT', 'Zoho', 'infosys', 'meta', 'whatsapp']
+['whatsapp', 'meta', 'infosys', 'Zoho', 'MICROSOFT', 'Google', 'Apple', 'Amazon']
+['whatsapp', 'meta', 'infosys']
+['Google', 'Apple', 'Amazon']
+['Zoho']
+['meta', 'infosys', 'Zoho', 'MICROSOFT', 'Google', 'Apple', 'Amazon']
+['meta', 'infosys', 'Zoho', 'Google', 'Apple', 'Amazon']
+['meta', 'infosys', 'Zoho', 'Google', 'Apple']
+[]
+['HTML', 'CSS', 'JS', 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MANGODB']
+['HTML', 'CSS', 'JS', 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MANGODB', 'PYTHON', 'SQL']
+
+=== Code Execution Successful ===
+
+
+# EXERCISE 2 :
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+- Sort the list and find the min and max age
+- Add the min age and the max age again to the list
+- Find the median age (one middle item or two middle items divided by two)
+- Find the average age (sum of all items divided by their number )
+- Find the range of the ages (max minus min)
+- Compare the value of (min - average) and (max - average), use abs() method
+
+  # IMPLEMENTATION OF EXERCISE 2 :
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+
+print(ages)
+min_1=ages[0]
+max_1=ages[-1]
+print(min_1,max_1)
+
+n=len(ages)
+print(n)
+total=0
+for age in ages:
+    total+=age
+print(total)
+# FIND THE MIDDLE ELEMENT : 
+mid1=ages[(n-1)//2] 
+mid2=ages[n//2] 
+median=(mid1+mid2)/2 
+print(median) # FIND THE MEDIAN 
+average=total/n  # AVERAGE 
+print(average)
+range=max_1-min_1
+print(range)
+min_diff=abs(min_1-average)   # ABSOLUTE VALUE LIKE [-1] = [1]
+max_diff=abs(max_1-average)
+print(round(min_diff,1))
+print(round(max_diff,1))
+
+# OUTPUT : 
+[19, 19, 20, 22, 24, 24, 24, 25, 25, 26]
+19 26
+10
+228
+24.0
+22.8
+7
+3.8
+3.2
+=== Code Execution Successful ===[19, 19, 20, 22, 24, 24, 24, 25, 25, 26]
+19 26
+10
+228
+24.0
+22.8
+7
+3.8
+3.2
+=== Code Execution Successful ===
+
+
+###THANKFUL TO MY TECHNICAL TRAINEER KALAIYARASAN SIR###
+
